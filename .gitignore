@@ -1,3 +1,4 @@
 .*
+!.gitmodules
 !.gitignore
 sessions/
