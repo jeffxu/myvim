@@ -111,3 +111,6 @@ endfunction
 " open CommandT by NERDTree root path
 nmap ,t :call CmdT()<CR>
 
+" pydoc specify the path to pydoc to figure out which version of python to
+" use.
+let g:pydoc_cmd = "/usr/bin/pydoc2.6"
