@@ -63,11 +63,14 @@ if !has('Win32')
     set listchars=tab:·\ ,eol:¬
 endif
 
+" vim插件管理工具
 call pathogen#infect()
 
 " 将F2键映射为取消字符串搜索后的高亮
 map <F2> :nohlsearch<CR>
 
+" <TAB>: completion.
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 autocmd FILEType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
